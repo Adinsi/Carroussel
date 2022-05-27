@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#slider{
+    position: relative;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+
+}
+
+#precedent,#suivant{
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 100px;
+    color: rgba(17, 11, 11, 0.8);
+    padding: 10px;
+   
+}
+#precedent{
+    left: 0;
+}
+
+#suivant{
+    right: 0;
+}
+
+#slider:hover #precedent , 
+#slider:hover #suivant{
+    opacity: 1;
+    font-size:120px ;
+}
